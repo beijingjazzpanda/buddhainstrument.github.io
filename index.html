@@ -2,13 +2,15 @@
 <body>
 	<script>
 		var snd_one = new Audio("sound.mp3");
-	    function PlaySound(melody) {
-	        this.snd_one.play();
-	        this.snd_one = this.snd_one.cloneNode(true);
-	    }
+		
+		function PlaySound(melody) {
+			this.snd_one.play();
+			this.snd_one = this.snd_one.cloneNode(true);
+		}
+		
 		document.addEventListener("keydown", function(event) {
 		  	if (event.keyCode == 49 || event.keyCode == 97) {
-		    	PlaySound('melody1');
+		    		PlaySound('melody1');
 		  	}
 		  	console.log(event.keyCode);
 		});
